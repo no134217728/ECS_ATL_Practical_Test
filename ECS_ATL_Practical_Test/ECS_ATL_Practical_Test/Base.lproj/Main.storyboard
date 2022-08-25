@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userListCell" rowHeight="100" id="Vhp-bR-Rqc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userListCell" rowHeight="100" id="Vhp-bR-Rqc" customClass="UserTableViewCell" customModule="ECS_ATL_Practical_Test" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vhp-bR-Rqc" id="0VZ-f2-kgu">
@@ -66,6 +66,11 @@
                                                 <constraint firstItem="kg7-6d-I2I" firstAttribute="centerY" secondItem="byW-J9-eT2" secondAttribute="centerY" id="xva-Vy-wHp"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="siteAdminBadge" destination="6vP-R5-SUn" id="bz6-Wz-nKM"/>
+                                            <outlet property="userNameMid" destination="kg7-6d-I2I" id="4gD-fE-IAU"/>
+                                            <outlet property="userNameTop" destination="jgJ-xK-NHY" id="m7o-NX-ecb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -79,6 +84,9 @@
                             <constraint firstItem="qyp-Qy-Pqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dMH-SN-cwQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="userListTableView" destination="qyp-Qy-Pqk" id="CVf-gR-XTe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
