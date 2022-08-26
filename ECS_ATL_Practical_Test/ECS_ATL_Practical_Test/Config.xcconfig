@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  ECS_ATL_Practical_Test
+//
+//  Created by Wei Jen Wang on 2022/8/26.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+USE_MOCK = 1
