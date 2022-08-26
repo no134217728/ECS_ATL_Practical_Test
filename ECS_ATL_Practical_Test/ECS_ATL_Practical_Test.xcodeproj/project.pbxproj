@@ -23,6 +23,7 @@
 /* Begin PBXFileReference section */
 		20022A2F28B77EAA00F183B3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		20022A3128B77F7C00F183B3 /* NetworkDataAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataAccess.swift; sourceTree = "<group>"; };
+		20022A3328B84DC400F183B3 /* MockData200.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData200.json; sourceTree = "<group>"; };
 		20FFC72B28B73F81005C738D /* ECS_ATL_Practical_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ECS_ATL_Practical_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20FFC72E28B73F81005C738D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20FFC73028B73F81005C738D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +71,7 @@
 				20FFC73028B73F81005C738D /* SceneDelegate.swift */,
 				20FFC73228B73F81005C738D /* ViewController.swift */,
 				20022A3128B77F7C00F183B3 /* NetworkDataAccess.swift */,
+				20022A3328B84DC400F183B3 /* MockData200.json */,
 				20022A2F28B77EAA00F183B3 /* UserTableViewCell.swift */,
 				20FFC73428B73F81005C738D /* Main.storyboard */,
 				20FFC73728B73F8F005C738D /* Assets.xcassets */,
