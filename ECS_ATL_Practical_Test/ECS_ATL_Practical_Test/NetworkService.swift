@@ -36,7 +36,7 @@ extension GithubServices: TargetType {
     var sampleData: Data {
         switch self {
         default:
-            guard let url = Bundle.main.url(forResource: "MockData200", withExtension: "json"),
+            guard let url = Bundle.main.url(forResource: "MockData", withExtension: "json"),
                 let data = try? Data(contentsOf: url) else {
                     return Data()
             }

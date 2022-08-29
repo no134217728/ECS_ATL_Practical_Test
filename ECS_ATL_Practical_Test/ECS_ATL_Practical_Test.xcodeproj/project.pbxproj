@@ -13,6 +13,7 @@
 		20022A3028B77EAA00F183B3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20022A2F28B77EAA00F183B3 /* UserTableViewCell.swift */; };
 		20022A3528B85C9200F183B3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20022A3428B85C9200F183B3 /* NetworkService.swift */; };
 		209495FC28BB467C0069ABED /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209495FB28BB467C0069ABED /* DataModel.swift */; };
+		20F4361228BC4F340022DCEA /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 20022A3328B84DC400F183B3 /* MockData.json */; };
 		20FFC72F28B73F81005C738D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FFC72E28B73F81005C738D /* AppDelegate.swift */; };
 		20FFC73328B73F81005C738D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FFC73228B73F81005C738D /* ViewController.swift */; };
 		20FFC73628B73F81005C738D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20FFC73428B73F81005C738D /* Main.storyboard */; };
@@ -22,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		20022A2F28B77EAA00F183B3 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
-		20022A3328B84DC400F183B3 /* MockData200.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData200.json; sourceTree = "<group>"; };
+		20022A3328B84DC400F183B3 /* MockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MockData.json; sourceTree = "<group>"; };
 		20022A3428B85C9200F183B3 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		20022A3628B85DA700F183B3 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		209495FB28BB467C0069ABED /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -69,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				20022A3628B85DA700F183B3 /* Config.xcconfig */,
-				20022A3328B84DC400F183B3 /* MockData200.json */,
+				20022A3328B84DC400F183B3 /* MockData.json */,
 				20FFC72E28B73F81005C738D /* AppDelegate.swift */,
 				20FFC73228B73F81005C738D /* ViewController.swift */,
 				20022A3428B85C9200F183B3 /* NetworkService.swift */,
@@ -150,6 +151,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20F4361228BC4F340022DCEA /* MockData.json in Resources */,
 				20FFC73B28B73F8F005C738D /* LaunchScreen.storyboard in Resources */,
 				20FFC73828B73F8F005C738D /* Assets.xcassets in Resources */,
 				20FFC73628B73F81005C738D /* Main.storyboard in Resources */,
