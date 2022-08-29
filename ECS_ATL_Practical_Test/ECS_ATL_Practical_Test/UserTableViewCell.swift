@@ -6,21 +6,39 @@
 //
 
 import UIKit
+import Kingfisher
 
 class UserTableViewCell: UITableViewCell {
+    @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var userNameTop: UILabel!
     @IBOutlet weak var userNameMid: UILabel!
     @IBOutlet weak var siteAdminBadge: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        userAvatar.layer.cornerRadius = userAvatar.frame.height / 2
+        siteAdminBadge.layer.cornerRadius = siteAdminBadge.frame.height / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configTheCell(details: UserListDetails) -> UserTableViewCell {
+        userNameTop.isHidden = !details.site_admin
+        siteAdminBadge.isHidden = !details.site_admin
+        userNameMid.isHidden = details.site_admin
+        
+        let url = URL(string: details.avatar_url)
+        userAvatar.kf.setImage(with: url)
+        
+        userNameTop.text = details.login
+        userNameMid.text = details.login
+        
+        return self
     }
 
 }
