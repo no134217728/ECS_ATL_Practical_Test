@@ -12,6 +12,7 @@
 		20022A2E28B7793600F183B3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 20022A2D28B7793600F183B3 /* Kingfisher */; };
 		20022A3028B77EAA00F183B3 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20022A2F28B77EAA00F183B3 /* UserTableViewCell.swift */; };
 		20022A3528B85C9200F183B3 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20022A3428B85C9200F183B3 /* NetworkService.swift */; };
+		208602F328BF097A0001AD61 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 208602F228BF097A0001AD61 /* RxCocoa */; };
 		209495FC28BB467C0069ABED /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209495FB28BB467C0069ABED /* DataModel.swift */; };
 		20F4361228BC4F340022DCEA /* MockData.json in Resources */ = {isa = PBXBuildFile; fileRef = 20022A3328B84DC400F183B3 /* MockData.json */; };
 		20FFC72F28B73F81005C738D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FFC72E28B73F81005C738D /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 			files = (
 				20022A2E28B7793600F183B3 /* Kingfisher in Frameworks */,
 				20022A2B28B7792700F183B3 /* RxMoya in Frameworks */,
+				208602F328BF097A0001AD61 /* RxCocoa in Frameworks */,
 				20022A2928B7792700F183B3 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +106,7 @@
 				20022A2828B7792700F183B3 /* Moya */,
 				20022A2A28B7792700F183B3 /* RxMoya */,
 				20022A2D28B7793600F183B3 /* Kingfisher */,
+				208602F228BF097A0001AD61 /* RxCocoa */,
 			);
 			productName = ECS_ATL_Practical_Test;
 			productReference = 20FFC72B28B73F81005C738D /* ECS_ATL_Practical_Test.app */;
@@ -136,6 +139,7 @@
 			packageReferences = (
 				20022A2728B7792700F183B3 /* XCRemoteSwiftPackageReference "Moya" */,
 				20022A2C28B7793600F183B3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				208602F128BF097A0001AD61 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = 20FFC72C28B73F81005C738D /* Products */;
 			projectDirPath = "";
@@ -493,6 +497,14 @@
 				kind = branch;
 			};
 		};
+		208602F128BF097A0001AD61 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -510,6 +522,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 20022A2C28B7793600F183B3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		208602F228BF097A0001AD61 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 208602F128BF097A0001AD61 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
