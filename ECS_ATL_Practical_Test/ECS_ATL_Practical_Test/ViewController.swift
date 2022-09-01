@@ -21,6 +21,14 @@ class ViewController: UIViewController {
         
         userListTableView.delegate = self
         
+        if viewModel.useMock {
+            viewModel.fetchUserListAll()
+                .bind(to: userListTableView.rx.items(cellIdentifier: "userListCell", cellType: UserTableViewCell.self)) { (row, element, cell) in
+                    cell.configTheCell(details: element)
+                }
+                .disposed(by: disposeBag)
+        } else {
+        }
     }
 }
 
