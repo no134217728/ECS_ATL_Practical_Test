@@ -25,7 +25,7 @@ class UserTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configTheCell(details: UserListDetails) -> UserTableViewCell {
+    func configTheCell(details: UserListDetails) {
         userNameTop.isHidden = !details.site_admin
         siteAdminBadge.isHidden = !details.site_admin
         userNameMid.isHidden = details.site_admin
@@ -35,7 +35,5 @@ class UserTableViewCell: UITableViewCell {
         
         userNameTop.text = details.login
         userNameMid.text = details.login
-        
-        return self
     }
 }
