@@ -7,6 +7,13 @@
 
 import UIKit
 
+import Moya
+import RxMoya
+import RxSwift
+import RxRelay
+
 class ViewModel {
+    let useMock = Bundle.main.infoDictionary?["Mock Mode"] as? String == "1"
     
+    private let disposeBag = DisposeBag()
 }
