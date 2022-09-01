@@ -38,13 +38,13 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgJ-xK-NHY">
-                                                            <rect key="frame" x="92" y="21" width="42" height="21"/>
+                                                            <rect key="frame" x="92" y="21" width="298" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg7-6d-I2I">
-                                                            <rect key="frame" x="92" y="35.5" width="42" height="21"/>
+                                                            <rect key="frame" x="92" y="35.5" width="298" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
@@ -65,9 +65,12 @@
                                                         <constraint firstItem="6vP-R5-SUn" firstAttribute="top" secondItem="byW-J9-eT2" secondAttribute="centerY" constant="4" id="7Nd-VO-VqK"/>
                                                         <constraint firstItem="6vP-R5-SUn" firstAttribute="leading" secondItem="jgJ-xK-NHY" secondAttribute="leading" id="HoD-Ub-QTy"/>
                                                         <constraint firstItem="kg7-6d-I2I" firstAttribute="centerY" secondItem="byW-J9-eT2" secondAttribute="centerY" id="V8p-8h-45U"/>
+                                                        <constraint firstItem="kg7-6d-I2I" firstAttribute="trailing" secondItem="jgJ-xK-NHY" secondAttribute="trailing" id="i4e-lb-cNh"/>
                                                         <constraint firstItem="jgJ-xK-NHY" firstAttribute="leading" secondItem="byW-J9-eT2" secondAttribute="trailing" constant="8" id="mYG-dx-eQv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jgJ-xK-NHY" secondAttribute="trailing" constant="8" id="mrg-F5-pfB"/>
                                                         <constraint firstAttribute="bottom" secondItem="byW-J9-eT2" secondAttribute="bottom" constant="8" id="pgJ-Q0-CWd"/>
                                                         <constraint firstItem="byW-J9-eT2" firstAttribute="top" secondItem="uMd-zP-7wa" secondAttribute="top" constant="8" id="uGn-co-fwG"/>
+                                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6vP-R5-SUn" secondAttribute="trailing" constant="20" symbolic="YES" id="xf4-FD-PYQ"/>
                                                         <constraint firstItem="byW-J9-eT2" firstAttribute="leading" secondItem="uMd-zP-7wa" secondAttribute="leading" constant="8" id="y9N-5e-nCN"/>
                                                     </constraints>
                                                 </view>
