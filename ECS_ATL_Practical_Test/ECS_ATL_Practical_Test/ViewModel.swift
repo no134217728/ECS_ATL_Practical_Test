@@ -55,6 +55,10 @@ class ViewModel {
     }
     
     func fetchUserListWithPaging() {
+        let currentList = userList.value
+        
+        perPage = min(perPage, maxCapacity - currentList.count)
+        
         let stub = MoyaProvider<GithubServices>.neverStub // online only
         let provider = MoyaProvider<GithubServices>(stubClosure: stub)
         return provider.rx.request(.GetUserListPage(since: lastId, perPage: perPage)).subscribe { [self] event in
@@ -65,10 +69,12 @@ class ViewModel {
                         return
                     }
                     
-                    let currentList = userList.value
                     lastId = userListData.users.last?.id ?? 1
-                    
-                    userList.accept(currentList + userListData.users)
+                    if currentList.count >= maxCapacity {
+                        userList.accept(currentList)
+                    } else {
+                        userList.accept(currentList + userListData.users)
+                    }
                 case .failure(let err):
                     print(err)
                 }
