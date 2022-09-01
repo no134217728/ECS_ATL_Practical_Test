@@ -25,7 +25,7 @@ class UserTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configTheCell(details: UserListDetails) {
+    func configTheCell(details: UserListDetails, sn: Int) {
         userNameTop.isHidden = !details.site_admin
         siteAdminBadge.isHidden = !details.site_admin
         userNameMid.isHidden = details.site_admin
@@ -33,7 +33,7 @@ class UserTableViewCell: UITableViewCell {
         let url = URL(string: details.avatar_url)
         userAvatar.kf.setImage(with: url)
         
-        userNameTop.text = details.login
-        userNameMid.text = details.login
+        userNameTop.text = "\(sn) " + details.login
+        userNameMid.text = "\(sn) " + details.login
     }
 }

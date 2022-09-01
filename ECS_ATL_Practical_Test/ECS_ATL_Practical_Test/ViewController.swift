@@ -24,12 +24,12 @@ class ViewController: UIViewController {
         if viewModel.useMock {
             viewModel.fetchUserListAll()
                 .bind(to: userListTableView.rx.items(cellIdentifier: "userListCell", cellType: UserTableViewCell.self)) { (row, element, cell) in
-                    cell.configTheCell(details: element)
+                    cell.configTheCell(details: element, sn: row)
                 }
                 .disposed(by: disposeBag)
         } else {
             viewModel.userList.bind(to: userListTableView.rx.items(cellIdentifier: "userListCell", cellType: UserTableViewCell.self)) { (row, element, cell) in
-                cell.configTheCell(details: element)
+                cell.configTheCell(details: element, sn: row)
             }
             .disposed(by: disposeBag)
             
