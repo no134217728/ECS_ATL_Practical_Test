@@ -110,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="Ho3-eT-5YC">
             <objects>
-                <viewController storyboardIdentifier="detailsPage" id="si1-NG-nZW" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detailsPage" id="si1-NG-nZW" customClass="DetailsViewController" customModule="ECS_ATL_Practical_Test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Yts-gQ-Uif">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,7 +145,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVx-we-cKg">
+                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVx-we-cKg">
                                 <rect key="frame" x="98" y="337" width="56" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Staff"/>
@@ -168,6 +168,12 @@
                             <constraint firstItem="9C2-6Z-I6V" firstAttribute="top" secondItem="c0E-Ku-O1N" secondAttribute="top" constant="8" id="w5l-BK-gCd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="9C2-6Z-I6V" id="Mhy-k4-NxU"/>
+                        <outlet property="isStaff" destination="mVx-we-cKg" id="bk6-D2-QZf"/>
+                        <outlet property="userAvatar" destination="wY3-mr-8yu" id="77V-QM-cAS"/>
+                        <outlet property="userID" destination="CHy-oQ-iE8" id="eLz-bu-Uhm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dsC-dq-eEu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
