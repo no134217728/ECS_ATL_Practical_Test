@@ -19,7 +19,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        userListTableView.delegate = self
+        userListTableView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        userListTableView.rx.itemSelected.subscribe(onNext: { [weak self] indexPath in
+            guard let self = self else { return }
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(withIdentifier: "detailsPage") as! DetailsViewController
+            viewController.row = indexPath.row
+            
+            self.present(viewController, animated: true)
+        }).disposed(by: disposeBag)
         
         if viewModel.useMock {
             viewModel.fetchUserListAll()
@@ -35,6 +45,7 @@ class ViewController: UIViewController {
             
             userListTableView.rx.didEndDragging.subscribe { [weak self] _ in
                 guard let self = self else { return }
+                
                 let offSetY = self.userListTableView.contentOffset.y
                 let contentHeight = self.userListTableView.contentSize.height
                 
