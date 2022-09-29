@@ -54,14 +54,14 @@ class ViewModel {
         }
     }
     
-    func fetchUserListWithPaging() {
+    private func fetchUserListWithPaging() {
         let currentList = userList.value
         
         perPage = min(perPage, maxCapacity - currentList.count)
         
         let stub = MoyaProvider<GithubServices>.neverStub // online only
         let provider = MoyaProvider<GithubServices>(stubClosure: stub)
-        return provider.rx.request(.GetUserListPage(since: lastId, perPage: perPage)).subscribe { [self] event in
+        provider.rx.request(.GetUserListPage(since: lastId, perPage: perPage)).subscribe { [self] event in
                 switch event {
                 case .success(let res):
                     guard let userListData = try? JSONDecoder().decode(UserList.self, from: res.data) else {

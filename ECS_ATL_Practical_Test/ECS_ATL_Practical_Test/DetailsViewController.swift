@@ -14,11 +14,4 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var userID: UILabel!
     @IBOutlet weak var isStaff: UIButton!
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-    }
 }
